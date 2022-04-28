@@ -1,0 +1,86 @@
+.inicio{
+    display: grid;
+    grid-template-areas:
+    "presentacion presentacion presentacion presentacion"
+    "camas camas cajoneras cajoneras" ;
+    gap: 10px;
+    .presentacion{
+        margin-top: 10px;
+        grid-area: presentacion;
+        height: 60vh;
+        background-image: url(/DesafioSass/images/seccionBienvenida.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            transform: scale(1.01);
+        }
+        h2{
+            color: #ece3e3;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            transition-property: transform;
+            transition-duration: 3s;
+            &:hover{
+                cursor:default;
+                transform:  scale3d(2,2,2);
+                
+            }
+        }
+    }
+    .camas{
+        grid-area: camas;
+        height: 30vh;
+        background-image: url(../images/bedroom-416062.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            transform: scale(1.01);
+        }
+        h3{
+            a{
+                color: black;
+                &:hover{
+                    border: 1px solid black;
+                    padding: 20px;
+                    border-radius: 50px;
+                    background-color: rgb(78, 19, 132);
+                    color:#ece3e3
+                }
+            }
+        }
+        
+    }
+    .cajoneras{
+        grid-area: cajoneras;
+        height: 30vh;
+        background-image: url(../images/cajoneraPino.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            transform: scale(1.01);
+        }
+        h3{
+            a{
+                color: black;
+                &:hover{
+                    border: 1px solid black;
+                    padding: 20px;
+                    border-radius: 50px;
+                    background-color: rgb(78, 19, 132);
+                    color:#ece3e3
+                }
+            }
+        }
+    }
+}
